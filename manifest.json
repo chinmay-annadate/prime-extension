@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Prime Video Overlay Remover",
+  "version": "1.0",
+  "description": "Removes the darkening scrim/overlay when controls are active.",
+  "permissions": [],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.primevideo.com/*",
+        "https://www.amazon.com/gp/video/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
